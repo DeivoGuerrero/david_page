@@ -1,8 +1,8 @@
 {% extends "layouts/base.html" %}
 {% block title %}Ing. David Guerrero{% endblock title %}
 {% block content %}
-<div class="container overflow-hidden text-center">
-    <section class="row justify-content-center align-items-center" style="background-color: black;">
+<div class="container-fluid overflow-hidden text-center">
+    <section class="container row justify-content-center align-items-center" style="background-color: black;">
         <div class="col-md-6" style="background-color: aqua;">
             <div class="p-3 align-items-center">
                 <div class="container" style="background-color: blueviolet;">
@@ -20,8 +20,92 @@
             </div>  
         </div>
     </section>
-    <section class="row gy-5">
-        <div></div>
+    <section class="row">
+        <div id="skills" class="container-fluid">
+            <label for="skills_">Habilidades </label>
+            <div id="skills_" class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <img src="https://picsum.photos/150/150" alt="foto">
+                    </div>
+                    <div class="col-auto">
+                        <img src="https://picsum.photos/150/150" alt="foto">
+                    </div>
+                    <div class="col-auto">
+                        <img src="https://picsum.photos/150/150" alt="foto">
+                    </div>
+                    <div class="col-auto">
+                        <img src="https://picsum.photos/150/150" alt="foto">
+                    </div>
+                    <div class="col-auto">
+                        <img src="https://picsum.photos/150/150" alt="foto">
+                    </div>
+                    <div class="col-auto">
+                        <img src="https://picsum.photos/150/150" alt="foto">
+                    </div>
+                    <div class="col-auto">
+                        <img src="https://picsum.photos/150/150" alt="foto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="row">
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Especialista en Seguridad de TI [Mayo 2020 - Abril 2024]
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>NeoSecure by SEK Argentina</strong> Trabajando como consultor externo para <strong>Telecom Argentina</strong> formé parte del equipo GRCI (Government Risk Compliance Incidents), mi rol principal fué el de diseñar, implementar, desarrollar, ejecutar, mejorar y automatizar los diferentes controles de seguridad para garantizar el cumplimiento de la certificación SOX, cumpliendo esta meta a lo lardo de los 4 años presentes en la compañía. A su vez brindando mi apoyo en otras certificaciones como PCI-DSS; al igual que en diferentes campañas de concientización.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Soporte de aplicaciones de tecnología de la información [Noviembre 2019 - Mayo 2020]
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Voolkia Software & Services - Argentina</strong> Trabajé como consultor externo para <strong>Mercado Libre Argentina</strong> forme parte del equipo de Mercado Envios, mi rol principal fue el de brindar soporte ágil y oportuno para dar solución a los diferentes incidentes que surgieran entre al aplicativo interno y la operatoria encargada de Warehouse shipping de Argentina, México y Brasil. A su vez brindado apoyo al equipo de desarrollo en la optimización de los diferentes scripts, para garantizar una mayor eficiencia y eficacia de los procesos; destacando que en ese momento nos encontrábamos en bajo la urgencia sanitaria COVID19 y el volumen de envíos incrementó exponencialmente.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Analista de Programación [Noviembre 2018 - Noviembre 2019]
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Acciona IT - Argentina</strong> Trabajé como consultor externo para <strong>+ Vision - Argentina</strong>, forme parte del equipo de desarrollo, mi rol principal fue precisamente el de desarrollar nuevos modulos al sistema POS, además de brindar soporte y colaborar en la documentación del mismo, colaborando activamente en la automatización de reportes clave para la empresa. Uno de mis principales desafíos y logros, fue el desarrollar un módulo encargado de realizar la comunicación entre el mismo sistema POS y la maquinaria encargada de fabricación de lentes, mejorando así el proceso de elaboración de los productos.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="contact" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-3">Enviar mensaje</button>
+            </div>
+        </div>
     </section>
 </div>
 {% endblock content %}

@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: #dce0e6;
+    --color-primary: #606d80;
+    --color-secondary: #567ebb;
+    --color-terciary: #2b4c7e;
+    --color-text: #1f1f20;
+}
+
+header {
+    background-color: var(--color-terciary);
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+section {
+    margin: 25px;
+    background-color: var(--color-secondary);
+}
+
+#skills {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: var(--color-primary);
+}
+
+#experience {
+    background-color: var(--color-terciary);
+}
+
+#contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--color-terciary);
+}
+
+footer {
+    margin-top: 20px;
+    background-color: var(--color-primary);
+}
